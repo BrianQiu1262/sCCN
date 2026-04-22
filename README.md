@@ -2,7 +2,7 @@
 Code of the paper IEEE JBHI "A Real-Time Hand Gesture Recognition System  for Low-Latency HMI via Transient HD-sEMG  and In-Sensor Computing"
 
 dataset.py contains a dataloader class
-1. data: [Batch, Height, width, Channel]
+1. data: [Batch, Height, Width, Channel]
 2. label: [Batch]
 3. activations: [Batch]
 
