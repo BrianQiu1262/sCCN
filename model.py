@@ -30,13 +30,13 @@ def MobileNetv2():
     return keras.Model(inputs, x, name='sCNN')
 
 
-class sCNN(Model):
+class sCCN(Model):
     def __init__(self):
-        super(sCNN, self).__init__()
-        self.scnn = MobileNetv2()
+        super(sCCN, self).__init__()
+        self.sccn = MobileNetv2()
 
     def call(self, x):
-        x = self.scnn(x)
+        x = self.sccn(x)
         return x
 
 
