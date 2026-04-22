@@ -27,7 +27,7 @@ def MobileNetv2():
     x = Conv2D(256, kernel_size=1, padding='same', strides=1, activation='relu', kernel_initializer='he_uniform', bias_initializer='lecun_uniform')(x)
     x = GlobalAveragePooling2D()(x)
     x = Dense(12, kernel_initializer='he_uniform', bias_initializer='lecun_uniform')(x)
-    return keras.Model(inputs, x, name='sCNN')
+    return keras.Model(inputs, x, name='sCCN')
 
 
 class sCCN(Model):
