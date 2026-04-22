@@ -13,8 +13,6 @@ DEVICE = '' # TODO
 y_test = []
 y_pred = []
 
-train_loss = tf.keras.metrics.Mean(name='training_loss')
-train_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name='training_accuracy')
 test_loss = tf.keras.metrics.Mean(name='val_loss')
 test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name='val_accuracy')
 
