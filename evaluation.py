@@ -13,8 +13,8 @@ DEVICE = '' # TODO
 y_test = []
 y_pred = []
 
-test_loss = tf.keras.metrics.Mean(name='val_loss')
-test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name='val_accuracy')
+test_loss = tf.keras.metrics.Mean(name='test_loss')
+test_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(name='test_accuracy')
 
 loss_func = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True)
 
